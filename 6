@@ -1,0 +1,14 @@
+What is the Big O of the following algorithm? Explain your answer
+
+function createPairs(arr) {
+let ticks=0
+    for (let i = 0; i < arr.length; i++) {
+    ticks =ticks+1
+        for(let j = i + 1; j < arr.length; j++) {
+         ticks =ticks+1
+            console.log(arr[i] + ", " +  arr[j] );
+        }
+    }
+}
+
+Polynomial time O(n^k)
